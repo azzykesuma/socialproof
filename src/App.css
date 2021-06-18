@@ -13,6 +13,7 @@ body {
 section {
   background-image: url('./images/bg-pattern-top-mobile.svg');
   background-repeat: no-repeat;
+  height : 100vh;
 }
 
 .heroDesc {
@@ -106,7 +107,69 @@ h1 {
 .profile > div {
   color : #fff;
 }
+.backgroundBottom {
+  width: 10em;
+}
 
 .attribution {
   text-align: center;
+}
+
+@media screen and (min-width : 1440px) {
+  .heroDesc {
+    text-align: left;
+    width : 30%;
+    padding-top : 8em;
+    padding-left : 10em;
+  }
+  .heroDesc > h1 {
+    font-size: 40px;
+    line-height: 1em;
+    margin-bottom : .5em;
+  }
+  .heroDesc > p {
+    padding-bottom: 1em;
+  }
+  .header {
+    display : flex;
+  }
+  .mainStarContainer {
+    display : flex;
+    flex-direction: column;
+    margin-top: 5em;
+  }
+  .reviewContainer {
+    flex-direction: row;
+    padding-inline : 1.5em;
+    width : 25em;
+    justify-content: space-between;
+  }
+  .reviewContainer:nth-child(2) {
+    margin-left: 5em;
+  }
+  .reviewContainer:nth-child(3) {
+    margin-left: 10em;
+  }
+  .cardContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card {
+    display : flex;
+    flex-direction: column;
+    width : 300px;
+    padding-inline : 2em;
+    border-radius: 7px;
+  }
+  .card:nth-child(2) {
+    position: relative;
+    top : 1em;
+  }
+  .card:nth-child(3) {
+    position: relative;
+    top : 2em;
+  }
+  .backgroundBottom {
+    width : 40em;
+  }
 }
